@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>User List</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+  <h1 class="title-pratice">User Manager</h1>
+
+  <!--Table contain user list-->
+  <table class="user-list" id="userList">
+    <thead>
+      <tr>
+        <th class="thead-item">ID</th>
+        <th class="thead-item">First Name</th>
+        <th class="thead-item">Last Name</th>
+        <th class="thead-item">Birthday</th>
+        <th class="thead-item">Sex</th>
+        <th class="thead-item">Action</th>
+      </tr>
+    </thead>
+    <tbody id="rowsTable">
+      <!--Add user at here-->
+    </tbody>
+  </table>
+
+  <!--Form action-->
+  <div class="form-action">
+    <p class="title-form">Form Action</p>
+    <fieldset>
+      <label for="firstName">First Name: </label>
+      <input type="text" id="firstName">
+    </fieldset>
+    <fieldset>
+      <label for="lastName">Last Name: </label>
+      <input type="text" id="lastName">
+    </fieldset>
+    <fieldset>
+      <label for="birthday">Birthday: </label>
+      <input type="text" id="birthday">
+    </fieldset>
+    <fieldset>
+      <label for="sex">Sex: </label>
+      <input type="text" id="sex">
+    </fieldset>
+    <fieldset id="action">
+      <button class="btn-add" id="addBtn" onclick="addUser()">Add User</button>
+      <div id="editBtn"></div>
+      <button id="cancelBtn" onclick="clearForm()">Cancel</button>
+    </fieldset>
+  </div>
+
+</body>
+</html>
